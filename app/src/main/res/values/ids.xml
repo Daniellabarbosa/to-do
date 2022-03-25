@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textNome" type="id" />
+    <item name="textDescricao" type="id" />
+    <item name="textResponsavel" type="id" />
+    <item name="textData" type="id" />
+    <item name="switchCardAtivo" type="id" />
+    <item name="textCategoria" type="id" />
+    <item name="buttonDeletar" type="id" />
+    <item name="buttonSalvar" type="id" />
+    <item name="spinnerCategoria" type="id" />
+    <item name="switchAtivoCard" type="id" />
+    <item name="editNome" type="id" />
+    <item name="editDescricao" type="id" />
+    <item name="editResponsavel" type="id" />
+    <item name="editData" type="id" />
+</resources>
