@@ -3,7 +3,7 @@ package com.example.to_do
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
-import kotlin.text.Typography.dagger
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

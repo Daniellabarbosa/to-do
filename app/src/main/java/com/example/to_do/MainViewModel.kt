@@ -1,6 +1,8 @@
 package com.example.to_do
 
+import android.os.Build
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,9 +12,11 @@ import com.example.to_do.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.time.LocalDate
 import javax.inject.Inject
-import kotlin.text.Typography.dagger
 
+
+@RequiresApi(Build.VERSION_CODES.O)
 @HiltViewModel
 class MainViewModel @Inject constructor(
     val repository: Repository
@@ -23,6 +27,13 @@ class MainViewModel @Inject constructor(
 
     val reponseListCategoria: LiveData<Response<List<Categoria>>> =
         _responseListCategoria
+
+    val dataSelecionada = MutableLiveData<LocalDate>()
+
+    init {
+        dataSelecionada.value = LocalDate.now()
+        listCategoria()
+    }
 
     init {
         listCategoria()

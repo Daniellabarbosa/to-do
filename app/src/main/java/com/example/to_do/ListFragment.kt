@@ -10,6 +10,7 @@ import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.to_do.adapter.TarefaAdapter
+import com.example.to_do.databinding.FragmentListBinding
 
 class ListFragment : Fragment() {
 
@@ -44,5 +45,9 @@ class ListFragment : Fragment() {
     }
 
 }
+
+
+
+
 
 
